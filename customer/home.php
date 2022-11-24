@@ -31,7 +31,9 @@
 <main>
       <div class="homecontent">
         <div class="container">  
-          <h1>Want a Hair Cut?</h1>
+          <h1>Want a Haircut?</h1>
+        </div>
+      </div>
     </main>
 
     <section class="sections">
