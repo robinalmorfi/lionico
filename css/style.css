@@ -96,7 +96,7 @@ input {
 body {
     margin: 0;
     margin-right: 0%;
-    background: #222;
+    background: rgb(27, 20, 20);
     font-weight: 300;
 }
 
@@ -231,4 +231,29 @@ footer {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 11px;
+  }
+
+  .services {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+
+  .services h2 {
+    color: #fff;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 23px;
+  }
+
+  .services p {
+    padding-top: 10px;
+    color: #fff;
+  }
+
+  .services img {
+    padding-top: 25px;
+    height: 500px;
   }
