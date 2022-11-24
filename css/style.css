@@ -257,3 +257,27 @@ footer {
     padding-top: 25px;
     height: 500px;
   }
+
+  .calendar h2{
+    color: #fff;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .calendar table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+  }
+
+  .calendar table th{
+    width: 70px;
+  }
+
+  .calendar table tr{
+    height: 10px;
+  }
