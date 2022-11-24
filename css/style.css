@@ -95,6 +95,7 @@ input {
 
 body {
     margin: 0;
+    margin-right: 0%;
     background: #222;
     font-weight: 300;
 }
@@ -156,3 +157,78 @@ nav ul li a {
     height: 60px;
     padding: 5px;
 }
+
+main {
+    position: relative;
+    padding-top: 0px;
+    z-index: 1;
+    margin-right: 0%;
+  }
+  
+  main h1 {
+    color: rgb(4, 4, 4);
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size:55px;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 0%;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+
+.homecontent {
+    height: 550px;
+    background-image: url("../img/american_made_pendant_lights2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.sections {
+    text-align: center;
+    background-color: rgb(252, 251, 251);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.sections .col {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+  }
+
+.sections h2 {
+    color: rgb(4, 4, 4);
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+
+.sections p {
+    padding-top: 10px;
+    color: rgb(4, 4, 4);
+  }
+
+.sections img {
+    height: 100px;
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+
+  footer p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
