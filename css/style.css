@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* LOGIN FORM */
+
+.login-container {
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75)50%, rgba(0, 0, 0, 0.75)50%), url(../img/image1.jpg);
+    overflow: hidden;
+}
+
+.login-container .line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form .btn {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.login-form {
+    max-width: 450px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.login-form .logo-details .logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+
+.lion {
+    width: 110px;
+    height: 128px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 8px 0;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 15px;
+    transition: 0.3s ease-in;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgba(99, 22, 22, 0.493);
+}
+
+.login-form label {
+    color: white;
+}
+
+.forgot {
+    text-decoration: underline;
+    float: right;
+    color: brown;
+}
+
+.create {
+    color: white;
+    float: left;
+}
+
+/* TRANSACTION*/
+
+body {
+    margin: 0;
+    background: #222;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: black;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo-name {
+    float: left;
+    font-size: 20px;
+    padding: 18px 0;
+    color: white;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+nav ul li:hover {
+    color: black;
+    background-color: rgba(182, 170, 170, 0.651);
+}
+
+nav ul li a {
+    color: white;
+}
+
+.label #lion {
+    float: left;
+    width: 50px;
+    height: 60px;
+    padding: 5px;
+}
