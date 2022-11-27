@@ -21,7 +21,7 @@
             $_SESSION['fullname']=$row['firstname'] . ' ' . $row['lastname'];
             $_SESSION['user_type'] = $row['type'];
             //display the appropriate dashboard page for user
-            if (isset($_SESSION['type']) == 'admin'){
+            if (isset($_SESSION['user_type']) == 'admin'){
                 header('location: ../admin/dashboard.php');
             }else if (isset($_SESSION['user_type']) == 'customer'){
                 header('location: ../customer/home.html');
