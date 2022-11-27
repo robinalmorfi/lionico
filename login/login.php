@@ -23,8 +23,10 @@
             //display the appropriate dashboard page for user
             if (($_SESSION['user_type']) == 'customer'){
                 header('location: ../customer/home.html');
-            }else{
+            }else if (($_SESSION['user_type']) == 'admin'){
                 header('location: ../admin/dashboard.php');
+            }else{
+                header('location: login/login.php');
             }
         }
     }
