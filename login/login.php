@@ -21,16 +21,12 @@
             $_SESSION['fullname']=$row['firstname'] . ' ' . $row['lastname'];
             $_SESSION['user_type'] = $row['type'];
             //display the appropriate dashboard page for user
-            if (isset($_SESSION['user_type']) == 'admin'){
-                header('location: ../admin/dashboard.php');
-            }else if (isset($_SESSION['user_type']) == 'customer'){
+            if (($_SESSION['user_type']) == 'customer'){
                 header('location: ../customer/home.html');
             }else{
-                header('location: ../login/login.php');
+                header('location: ../admin/dashboard.php');
             }
         }
-        //set the error message if account is invalid
-        $error = 'Invalid username/password. Try again.';
     }
 ?>
 
