@@ -1,6 +1,6 @@
 <?php
     require_once '../classes/database.php';
-    $page_title = ' - Login';
+    $page_title = 'Login';
 
     //we start session since we need to use session values
     session_start();
