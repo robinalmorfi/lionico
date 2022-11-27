@@ -24,7 +24,7 @@
             if($value['type'] == 'admin'){
                 header('location: ../admin/dashboard.php');
             }else{
-                header('location: ../customer/home.php');
+                header('location: ../customer/home.html');
             }
         }
         //set the error message if account is invalid
