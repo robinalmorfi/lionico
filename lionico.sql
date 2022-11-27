@@ -28,7 +28,7 @@ USE `lionico`;
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `useraccounts` (
   `user_id` int(11) NOT NULL,
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `type`, `username`, `password`) VALUES
+INSERT INTO `useraccounts` (`user_id`, `firstname`, `lastname`, `type`, `username`, `password`) VALUES
 (1, 'Admin', '1', 'admin', 'admin', 'admin'),
 (2, 'Marvin', 'Waro', 'customer', 'marvin', 'marvin'),
 (3, 'Robin', 'Almorfi', 'customer', 'robin', 'robin');
@@ -54,7 +54,7 @@ INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `type`, `username`, `pa
 --
 -- Indexes for table `useraccounts`
 --
-ALTER TABLE `users`
+ALTER TABLE `useraccounts`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -64,7 +64,7 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for table `useraccounts`
 --
-ALTER TABLE `users`
+ALTER TABLE `useraccounts`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 

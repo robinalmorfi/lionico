@@ -1,13 +1,13 @@
 <?php
     require_once '../classes/database.php';
-    $page_title = 'Forecast - Login';
+    $page_title = ' - Login';
 
     //we start session since we need to use session values
     session_start();
     //creating an array for list of users can login to the system
     $conn=mysqli_connect("localhost","root","","lionico");  
      $error="";  
-    if (isset($_POST['submit'])) {  
+    if (isset($_POST['login'])) {  
       //echo "<pre>";  
       //print_r($_POST);  
       $username=mysqli_real_escape_string($conn,$_POST['username']);  
@@ -21,10 +21,14 @@
             $_SESSION['fullname']=$row['firstname'] . ' ' . $row['lastname'];
             $_SESSION['user_type'] = $row['type'];
             //display the appropriate dashboard page for user
-            if($value['type'] == 'admin'){
+            if (isset($_SESSION['user_type']) == 'admin'){
                 header('location: ../admin/dashboard.php');
-            }else{
+            }
+            else if (isset($_SESSION['user_type']) == 'customer'){
                 header('location: ../customer/home.html');
+            }
+            else{
+                header('location: ../login/login.php');
             }
         }
         //set the error message if account is invalid
